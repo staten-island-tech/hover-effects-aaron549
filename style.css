@@ -1,0 +1,44 @@
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 3rem, 5rem;
+  margin: 3rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
+  -webkit-transition: all 0.3xs;
+  transition: all 0.3xs;
+}
+
+.btn-red {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: blue;
+  color: #fff;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:hover {
+  -webkit-transform: scale(3);
+  transform: scale(3);
+  -webkit-box-shadow: 0 10 px 0.5 rem rgba(0, 128, 0, 0.2);
+  box-shadow: 0 10 px 0.5 rem rgba(0, 128, 0, 0.2);
+}
+
+html body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,15 +1,9 @@
-html,
-body {
-  font-size: 62.5%;
-  padding: 1;
-  margin: 1;
-  box-sizing: border-box;
-}
 $colors: (
   red: red,
   white: #fff,
   blue: blue,
   black: #000,
+  green: green,
 );
 
 @function color($color-name) {
