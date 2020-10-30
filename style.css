@@ -25,6 +25,17 @@
   background-color: #000;
   color: #fff;
 }
+.btn {
+  width: 277px;
+  height: 50px;
+  font-size: 1px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
 
 .btn:hover {
   -webkit-transform: scale(3);
@@ -40,5 +51,27 @@ html body {
   margin: 0;
   font-size: 62.5%;
 }
-
+.container {
+  height: 95vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3436;
+}
 /*# sourceMappingURL=style.css.map */
