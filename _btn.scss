@@ -6,11 +6,11 @@
   text-transform: capitalize;
   text-decoration: none;
   padding: 3rem, 5rem;
-  background-color: pink;
   margin: 3rem auto;
   font-size: 2rem;
   border-radius: 10rem;
-  transition: all 0.3xs;
+  transition: all 0.3s;
+  position: relative;
 }
 .btn-red {
   background-color: color(red);
@@ -25,40 +25,63 @@
   color: #fff;
 }
 .btn:hover {
-  transform: scale(3);
-  box-shadow: 0 10 px 0.5 rem rgba(color(green), 0.2);
+  transform: scale(1.25);
+  box-shadow: 0 10px 0.5rem rgba(color(green), 0.2);
+}
+.btn-black:hover {
+  transform: skew(-10deg);
+}
+.btn-blue:hover {
+  animation: bounce 1s;
+}
+.btn::after {
+  content: "";
+  display: inline-black;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
 }
 
-.btn-1 {
-  background: darken($red, 1.5%);
-  font-weight: 100;
-  
-  svg {
-    height: 45px;
-    left: 0;
-    position: absolute;
-    top: 0; 
-    width: 100%; 
-  }
-  
-  rect {
-    fill: none;
-    stroke: #fff;
-    stroke-width: 2;
-    stroke-dasharray: 422, 0;
-    transition: all 0.35s linear;
-  }
-}
-
-.btn-1:hover {
-  background: rgba($red, 0);
+.btn-green {
+  background-color: lighten(green, 3%);
+  border: 1px solid darken(green, 4%);
+  box-shadow: 0px 2px 0 darken(green, 5%), 2px 4px 6px darken(green, 2%);
   font-weight: 900;
   letter-spacing: 1px;
-  
-  rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-  }
+  transition: all 150ms linear;
+}
+
+.btn-green:hover {
+  background-color: darken(green, 1.5%);
+  border: 1px solid rgba(#000, 0.05);
+  box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+  color: lighten(green, 18%);
+  text-decoration: none;
+  text-shadow: -1px -1px 0 darken(green, 9.5%);
+  transition: all 250ms linear;
+}
+
+.btn-white {
+  transform-style: preserve-3d;
+}
+.btn-white:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  content: "SUP";
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+.btn-white:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
 }
